@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+		HOME
+	</title>
+	
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='js/home.js'></script>
+</head>
+<body>
+	<div id="home" style="height: max-height; margin: 10% ;float: center; ">
+	<h3 style="text-align: center; margin: 5%;">Premiere Company private Limited </h3>
+	<ul class="list-group">
+  <a href="Index.php"  class="list-group-item d-flex justify-content-between align-items-center">
+    CREATE NEW INVOICE
+    <span class="badge badge-primary badge-pill">Click Here!</span>
+  </a>
+  <a href="new_final.php" class="list-group-item d-flex justify-content-between align-items-center">
+    BROWSE INVOICE HISTORY
+    <span class="badge badge-primary badge-pill"></span>
+  </a>
+  <a href="item.html"  class="list-group-item d-flex justify-content-between align-items-center">
+    ITEM IN STOCK 
+    <span class="badge badge-primary badge-pill">Maintain Stock</span>
+  </a>
+  <a href="http://localhost/phpmyadmin/sql.php?server=1&db=mobile&table=client&pos=0" class="list-group-item d-flex justify-content-between align-items-center">
+    EDIT CUSTOMER DETAIL
+    <span class="badge badge-primary badge-pill">Update or edit Client detail!</span>
+  </a>
+   <li  class="list-group-item d-flex justify-content-between align-items-center" id="detail">
+    BROWSE CUSTOMER DETAIL
+    <form id="showinvoices" method="post" action="home.php" > 
+					<p onclick="myfunction()">
+
+		<label>CUSTOMER :
+		<select name = "username" class="dropup" style="margin: 5px;">
+			<option>Browse Customer</option>
+		</select> 
+		</label>
+	</p>
+				<p>
+		<label>Amount paid:
+		<input type="text"  name = "amt"  style="margin: 5px; " placeholder="0" onfocus="this.value=''">
+		</label>
+	</p>
+	<input type="submit" value="SAVE AND SHOW DETAIL" style="margin: 5px;" >
+</form>
+<div id="new"></div>
+
+    <span class="badge badge-primary badge-pill"></span>
+  </a>
+  <a href="http://localhost/phpmyadmin/sql.php?server=1&db=mobile&table=item&pos=0"  class="list-group-item d-flex justify-content-between align-items-center">
+    EDIT ITEM DETAIL
+    <span class="badge badge-primary badge-pill">Caution: deleted item can't be recovered!</span>
+  </a>
+</ul>
+</div>
+</div>
++6
+</body>
+</html>

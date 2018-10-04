@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  
+  <script type='text/javascript' src='js/jquery-1.3.2.min.js'></script>
+  
+
+  <script type='text/javascript' src='js/example3.js'></script>
+</head>
+<body>
+
+<div class="container" style="border: 1px dotted; margin-top: 15%" >
+  <button onclick="refunction()">GO TO HOME-></button>
+  <h2 style="margin-bottom: 3%; ">Add a item</h2>
+  <form class="form-horizontal" action="test_sixth.php" id="item_submit">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Item Class:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter item class" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Item Name</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="pwd" placeholder="Enter item detail" name="address">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwdd">Item Quantity</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="pwd" placeholder="Enter item detail" name="add">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Save Item</button>
+        
+      
+      </div>
+    </div>
+  </form>
+</div>
+<div id="success">
+ 
+</div>
+
+</body>
+</html>
